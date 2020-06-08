@@ -1,3 +1,40 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar-inverse {
+    background-color: teal;
+    border: none;
+}
+
+#logo {
+    text-transform: none;
+    font-style: italic;
+    &:hover {
+      color: #ccc;
+    }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  font-weight: bold;
+  color: #fff;
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background: teal;
+}
+
+li .dropdown-header {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+#top-main {
+    background: transparent;
+}
+
+#top-main-title {
+    font-weight: bold;
+    font-style: italic;
+}
