@@ -7,4 +7,4 @@ User.create!( name: "管理人",
 
 Task.create!( title: "タスク",
               note: "タスク詳細",
-              user_id: "1")
+              user_id: 1)
