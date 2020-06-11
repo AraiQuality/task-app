@@ -3,6 +3,7 @@ class TasksController < ApplicationController
   before_action :set_user
   
   def new
+    @task = Task.new
   end
   
   def create
@@ -22,6 +23,7 @@ class TasksController < ApplicationController
   end
   
   def show
+    @task = Task.find(params[:id])
   end
   
   def edit
@@ -43,7 +45,7 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
     @task.destroy
     flash[:success] = "タスクを削除しました。"
-    redirect_to user_task_url
+    redirect_to user_tasks_url @user
   end
 
   private

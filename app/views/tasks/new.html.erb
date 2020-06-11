@@ -1,9 +1,10 @@
+<% provide(:title, 'New Task') %>
 <h1>タスク新規作成</h1>
 
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <%= form_with(model: @tasks, url: user_tasks_path(@user), local: true) do |f| %>
-      <%#= render "shared/error_message", object: @task %>
+      <%= render "shared/error_messages", object: @task %>
       
       <%= f.label :title, "名称", class: "label-form" %>
       <%= f.text_field :title, class: "form-control" %>
