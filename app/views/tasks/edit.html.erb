@@ -6,10 +6,10 @@
     <%= form_with(model: @tasks, url: user_task_path(@user, @task), method: :patch, local: true) do |f| %>
       <%= render "shared/error_messages", object: @task %>
       
-      <%= f.label :title, "名称", class: "label-form" %>
+      <%= f.label :title, Task.human_attribute_name(:title), class: "label-form" %>
       <%= f.text_field :title, value: @task.title, class: "form-control" %>
       
-      <%= f.label :note, "詳細", class: "label-form" %>
+      <%= f.label :note, Task.human_attribute_name(:note), class: "label-form" %>
       <%= f.text_area :note, rows: 5, value: @task.note, class: "form-control" %>
       
       <%= f.submit "更新", class: "btn btn-primary btn-form" %>

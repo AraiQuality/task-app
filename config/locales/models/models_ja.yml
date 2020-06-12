@@ -4,15 +4,15 @@ ja:
       user: ユーザー
       task: タスク
     attributes:
-        user:
-          name: 名前
-          email: メールアドレス
-          password: パスワード
-          password_confirmation: パスワード再入力
-        task:
-          title: 名称
-          note: 詳細
-          user_id: ユーザーID
+      user:
+        name: 名前
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード再入力
+      task:
+        title: 名称
+        note: 詳細
+        user_id: ユーザーID
   attributes:
     id: ID
     created_at: 作成日
