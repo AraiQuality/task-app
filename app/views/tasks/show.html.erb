@@ -15,7 +15,7 @@
         </tr>
         <tr>
           <th class="active">詳細</th>
-          <td><%= @task.note %></td>
+          <td><%= raw Rinku.auto_link(h(@task.note)) %><%#= Rinku.auto_link(simple_format(@task.note)) %></td>
         </tr>
         <tr>
           <th class="active">作成日</th>
