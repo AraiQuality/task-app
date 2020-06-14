@@ -1,0 +1,38 @@
+/* ユーザー情報テーブル */
+
+.user-table {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* 入力フォーム */
+
+.label-signup {
+  margin-top: 5px;
+}
+
+.btn-signup {
+  margin-top: 10px;
+}
+
+.label-user--edit {
+  margin-top: 5px;
+}
+
+.btn-user--edit {
+  margin-top: 10px;
+}
+
+/* ユーザー一覧ページ */
+
+#table-users {
+  th {
+    text-align: left;
+  }
+  td {
+    vertical-align: middle;
+  }
+  .label-user-division {
+    margin-left: 5px;
+  }
+}
