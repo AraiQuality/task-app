@@ -22,3 +22,14 @@
 .btn-user--edit {
   margin-top: 10px;
 }
+
+/* ユーザー一覧ページ */
+
+#table-users {
+  th {
+    text-align: left;
+  }
+  td {
+    vertical-align: middle;
+  }  
+}
