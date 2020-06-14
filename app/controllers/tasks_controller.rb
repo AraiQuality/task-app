@@ -1,5 +1,4 @@
 class TasksController < ApplicationController
-  
   before_action :set_user
   
   def new
