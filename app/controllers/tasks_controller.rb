@@ -52,4 +52,11 @@ class TasksController < ApplicationController
     def task_params
       params.require(:task).permit(:title, :note, :user_id)
     end
+    
+    # beforeフィルター
+  
+    # paramsハッシュからユーザーを取得
+    def set_user
+      @user = User.find(params[:user_id])
+    end
 end

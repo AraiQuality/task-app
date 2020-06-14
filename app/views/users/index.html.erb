@@ -24,6 +24,13 @@
             </span>
           <% end %>
         </td>
+        <td>
+          <% if current_user.admin? && !current_user?(user) %>
+            <%= link_to "削除", user, method: :delete,
+                data: { confirm: "削除してよろしいですか？" },
+                class: "btn btn-danger" %>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </table>
