@@ -12,7 +12,18 @@
 
     <% @users.each do |user| %>
       <tr>
-        <td><%= link_to user.name, user %></td>
+        <td>
+        <%= link_to user.name, user %>
+          <% unless user.admin? %>
+            <span class="label label-success label-user-division">
+              一般
+            </span>
+          <% else %>
+            <span class="label label-primary label-user-division">
+              管理人
+            </span>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </table>
