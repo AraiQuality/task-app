@@ -20,11 +20,11 @@
             </span>
           <% else %>
             <span class="label label-primary label-user-division">
-              管理人
+              管理者
             </span>
           <% end %>
         </td>
-        <td>
+        <td class="text-right">
           <% if current_user.admin? && !current_user?(user) %>
             <%= link_to "削除", user, method: :delete,
                 data: { confirm: "削除してよろしいですか？" },
